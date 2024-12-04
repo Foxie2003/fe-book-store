@@ -1,0 +1,63 @@
+.login-container {
+  background-image: url("/banner1.png");
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.login-form-container {
+  width: 370px;
+  height: 310px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 27px 35px 18px 35px;
+  margin-right: 160px;
+}
+
+.login-form-title {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+
+.login-form-text {
+  display: block;
+  color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-align: right;
+}
+
+.login-form-link {
+  color: #FB4242;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: right;
+}
+
+.login-form-link:hover {
+color: #D10000;
+}
+
+.login-form-input {
+  border: 1px solid #D9D9D9;
+background: #FFF;
+border-radius: 0;
+margin: 15px 0;
+}
+
+.login-form-button {
+  width: 160px;
+  border-radius: 5px;
+background: #F00;
+margin: 15px 0;
+}
