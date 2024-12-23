@@ -1,6 +1,6 @@
 "use client";
 import Table from "react-bootstrap/Table";
-import TableStyle from "@/styles/table.module.css";
+import TableStyle from "@/styles/admin/table.module.css";
 import Image from "next/image";
 import linhvucactive from "../../../../public/linhvuc-active.png";
 import useSWR from "swr/immutable";

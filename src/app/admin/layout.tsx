@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import AdminStyle from "@/styles/admin.module.css";
+import AdminStyle from "@/styles/admin/admin.module.css";
 import menu from "../../../public/icon-menu.png";
 import logo from "../../../public/logo.png";
 import linhvuc from "../../../public/linhvuc.png";
