@@ -1,27 +1,32 @@
 import FooterStyle from "@/styles/footer.module.css";
 import Image from "next/image";
-import logo from "../../public/logo.png";
-import bocongthuong from "../../public/bocongthuong.png";
-import facebook from "../../public/facebook.png";
-import ggplus from "../../public/ggplus.png";
-import instagram from "../../public/instagram.png";
-import pinterest from "../../public/pinterest.png";
-import xbox from "../../public/xbox.png";
-import googleplay from "../../public/googleplay.png";
-import appstore from "../../public/appstore.png";
-import location from "../../public/icon-location.png";
-import email from "../../public/icon-email.png";
-import phone from "../../public/icon-phone.png";
-import vnpay from "../../public/vnpay.png";
-import momo from "../../public/momo.png";
-import shopee from "../../public/shopee.png";
+import bocongthuong from "../../../public/bocongthuong.png";
+import facebook from "../../../public/facebook.png";
+import ggplus from "../../../public/ggplus.png";
+import instagram from "../../../public/instagram.png";
+import pinterest from "../../../public/pinterest.png";
+import xbox from "../../../public/xbox.png";
+import googleplay from "../../../public/googleplay.png";
+import appstore from "../../../public/appstore.png";
+import location from "../../../public/icon-location.png";
+import email from "../../../public/icon-email.png";
+import phone from "../../../public/icon-phone.png";
+import vnpay from "../../../public/vnpay.png";
+import momo from "../../../public/momo.png";
+import shopee from "../../../public/shopee.png";
 
 function FooterComponent() {
   return (
     <div className={FooterStyle["footer-container"]}>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div className={FooterStyle["footer-row"]}>
-          <Image src={logo} style={{ width: "100%", height: 130 }} alt="logo" />
+          <Image
+            src={"/logo.png"}
+            layout="responsive" // == width 100% ?
+            width={0}
+            height={130}
+            alt="logo"
+          />
           <p style={{ fontSize: 13 }}>
             BNP BOOKS nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ
             trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ

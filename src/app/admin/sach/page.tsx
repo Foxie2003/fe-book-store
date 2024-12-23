@@ -9,11 +9,11 @@ import updateicon from "../../../../public/update.png";
 import deleteicon from "../../../../public/delete.png";
 import backicon from "../../../../public/back.png";
 import nexticon from "../../../../public/next.png";
-import AddSachModal from "@/components/add.sach.modal";
+import AddSachModal from "@/components/admin/add.sach.modal";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import UpdateDanhMucModal from "@/components/update.sach.modal";
-import DeleteModal from "@/components/delete.modal";
+import UpdateDanhMucModal from "@/components/admin/update.sach.modal";
+import DeleteModal from "@/components/admin/delete.modal";
 import Form from "react-bootstrap/Form";
 import api from "@/app/api";
 

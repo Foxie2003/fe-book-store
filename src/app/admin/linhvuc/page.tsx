@@ -7,11 +7,11 @@ import useSWR from "swr/immutable";
 import addicon from "../../../../public/add.png";
 import updateicon from "../../../../public/update.png";
 import deleteicon from "../../../../public/delete.png";
-import AddLinhVucModal from "@/components/add.linhvuc.modal";
+import AddLinhVucModal from "@/components/admin/add.linhvuc.modal";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import UpdateLinhVucModal from "@/components/update.linhvuc.modal";
-import DeleteModal from "@/components/delete.modal";
+import UpdateLinhVucModal from "@/components/admin/update.linhvuc.modal";
+import DeleteModal from "@/components/admin/delete.modal";
 import api from "@/app/api";
 
 function LinhVucPage() {

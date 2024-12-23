@@ -7,11 +7,11 @@ import useSWR from "swr/immutable";
 import addicon from "../../../../public/add.png";
 import updateicon from "../../../../public/update.png";
 import deleteicon from "../../../../public/delete.png";
-import AddDanhMucModal from "@/components/add.danhmuc.modal";
+import AddDanhMucModal from "@/components/admin/add.danhmuc.modal";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import UpdateDanhMucModal from "@/components/update.danhmuc.modal";
-import DeleteModal from "@/components/delete.modal";
+import UpdateDanhMucModal from "@/components/admin/update.danhmuc.modal";
+import DeleteModal from "@/components/admin/delete.modal";
 import api from "@/app/api";
 
 function DanhMucPage() {
