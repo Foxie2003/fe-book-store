@@ -20,12 +20,6 @@
   padding: 10px 58px 10px 30px;
 }
 
-.admin-item-active {
-  border-left: 2px solid #D10000;
-  background: rgba(217, 217, 217, 0.20);
-  color: #D10000;
-}
-
 .admin-menu-group-title {
   font-size: 14px;
   font-weight: 300;
@@ -38,12 +32,21 @@
   flex-direction: row;
   align-items: center;
   height: 40px;
-
   white-space: nowrap;
+  text-decoration: none;
+  font-weight: 200;
+  color: #000;
 }
 
 .admin-menu-item:hover {
   background: rgba(217, 217, 217, 0.20);
+}
+
+.admin-item-active {
+  border-left: 2px solid #D10000;
+  background: rgba(217, 217, 217, 0.20);
+  color: #D10000;
+  font-weight: 500;
 }
 
 .admin-menu-item-image {
@@ -55,7 +58,6 @@
 
 .admin-menu-item-title {
   font-size: 16px;
-  font-weight: 200;
 }
 
 .admin-main-container {

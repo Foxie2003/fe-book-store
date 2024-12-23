@@ -16,7 +16,8 @@ import sachactive from "../../../public/sach-active.png";
 import khachhangactive from "../../../public/khachhang-active.png";
 import donhangactive from "../../../public/donhang-active.png";
 import diachiactive from "../../../public/diachi-active.png";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function AdminLayout({
   children,
@@ -25,7 +26,6 @@ export default function AdminLayout({
 }>) {
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const pathname = usePathname();
-  const router = useRouter();
   return (
     <div className={AdminStyle["admin-container"]}>
       <div
@@ -43,7 +43,8 @@ export default function AdminLayout({
           }}
         />
         <h4 className={AdminStyle["admin-menu-group-title"]}>SẢN PHẨM</h4>
-        <div
+        <Link
+          href={"/admin/linhvuc"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -51,9 +52,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/linhvuc");
-          }}
         >
           <Image
             src={pathname.includes("/admin/linhvuc") ? linhvucactive : linhvuc}
@@ -61,8 +59,9 @@ export default function AdminLayout({
             className={AdminStyle["admin-menu-item-image"]}
           />
           <div className={AdminStyle["admin-menu-item-title"]}>Lĩnh vực</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          href={"/admin/danhmuc"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -70,9 +69,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/danhmuc");
-          }}
         >
           <Image
             src={pathname.includes("/admin/danhmuc") ? danhmucactive : danhmuc}
@@ -80,8 +76,9 @@ export default function AdminLayout({
             className={AdminStyle["admin-menu-item-image"]}
           />
           <div className={AdminStyle["admin-menu-item-title"]}>Danh mục</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          href={"/admin/sach"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -89,9 +86,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/sach");
-          }}
         >
           <Image
             src={pathname.includes("/admin/sach") ? sachactive : sach}
@@ -99,9 +93,10 @@ export default function AdminLayout({
             className={AdminStyle["admin-menu-item-image"]}
           />
           <div className={AdminStyle["admin-menu-item-title"]}>Sách</div>
-        </div>
+        </Link>
         <h4 className={AdminStyle["admin-menu-group-title"]}>NGƯỜI DÙNG</h4>
-        <div
+        <Link
+          href={"/admin/khachhang"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -109,9 +104,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/khachhang");
-          }}
         >
           <Image
             src={
@@ -123,8 +115,9 @@ export default function AdminLayout({
             className={AdminStyle["admin-menu-item-image"]}
           />
           <div className={AdminStyle["admin-menu-item-title"]}>Khách hàng</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          href={"/admin/donhang"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -132,9 +125,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/donhang");
-          }}
         >
           <Image
             src={pathname.includes("/admin/donhang") ? donhangactive : donhang}
@@ -142,8 +132,9 @@ export default function AdminLayout({
             className={AdminStyle["admin-menu-item-image"]}
           />
           <div className={AdminStyle["admin-menu-item-title"]}>Đơn hàng</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          href={"/admin/diachi"}
           className={
             AdminStyle["admin-menu-item"] +
             " " +
@@ -151,9 +142,6 @@ export default function AdminLayout({
               ? AdminStyle["admin-item-active"]
               : "")
           }
-          onClick={() => {
-            router.push("/admin/diachi");
-          }}
         >
           <Image
             src={pathname.includes("/admin/diachi") ? diachiactive : diachi}
@@ -163,7 +151,7 @@ export default function AdminLayout({
           <div className={AdminStyle["admin-menu-item-title"]}>
             Địa chỉ nhận hàng
           </div>
-        </div>
+        </Link>
       </div>
       <div
         className={AdminStyle["admin-main-container"]}
