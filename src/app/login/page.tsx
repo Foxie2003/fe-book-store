@@ -41,7 +41,7 @@ const LoginPage = () => {
               type="submit"
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/admin");
+                router.push("/user");
               }}
             >
               Đăng nhập

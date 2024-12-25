@@ -16,7 +16,7 @@ import sachactive from "../../../public/sach-active.png";
 import khachhangactive from "../../../public/khachhang-active.png";
 import donhangactive from "../../../public/donhang-active.png";
 import diachiactive from "../../../public/diachi-active.png";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function AdminLayout({
@@ -26,8 +26,6 @@ export default function AdminLayout({
 }>) {
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const pathname = usePathname();
-  const route = useRouter();
-  route.push("login"); // go back to login page
   return (
     <div className={AdminStyle["admin-container"]}>
       <div

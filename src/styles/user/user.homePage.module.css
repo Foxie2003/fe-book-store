@@ -1,0 +1,153 @@
+/* User Styles */
+.user-container {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+/* Responsive User */
+
+@media (max-width: 600px) {
+  .user-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Carousels Styles */
+.carousels-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.carousels-left {
+  width: 69%;
+  height: 100%;
+}
+
+.carousels-right {
+  width: 31%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.carousels-back-button {
+  position: absolute;
+  left: -22px;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 1000px;
+}
+
+.carousels-next-button {
+  position: absolute;
+  right: -22px;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 1000px;
+}
+
+/* Section Styles */
+
+/* Section */
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  border-radius: 6px;
+  background-color: #FFF;
+}
+
+/* Section Header */
+.section-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.section-header-title {
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.section-header-line {
+  width: 100%;
+  border-top: 1px solid;
+  border-color: #D9D9D9;
+}
+
+.section-header-gradient {
+  width: 450px;
+  height: 15px;
+  margin-top: -5px;
+  background-image:radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%, rgba(115, 115, 115, 0.00) 85.4%);
+}
+
+/* Special Section Header */
+.special-header-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: rgba(249, 152, 153, 0.95);
+  padding: 13px 23px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.special-header-title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.special-header-icon {
+  padding: 6px 8px;
+  border-radius: 8px;
+  background-color: #FB4242;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* Section Nav */
+.section-nav-container {
+  align-self: center;
+  gap: 23px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 41px;
+  margin: 15px 0;
+  border-radius: 30px;
+  background: #F2F2F2;
+  box-shadow: 0px 4px 4px 0px rgba(112, 112, 112, 0.10) inset;
+}
+
+.section-nav-item {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none; /* Ngăn không cho người dùng chọn nội dung text */
+}
+
+/* Responsive Section Nav */
+
+/* @media (max-width: 600px) {
+  .section-nav-container {
+    padding: 8px 20px;
+    background-color: #F0F;
+  }
+} */
+
+/* End Section Styles */

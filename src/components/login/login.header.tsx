@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,7 +10,7 @@ function HeaderComponent() {
     <Navbar style={{ height: 60 }} className="bg-white">
       <Container style={{ padding: 0 }}>
         <Navbar.Brand href="#home">
-          <img
+          <Image
             src="/logo.png"
             width="155"
             height="60"
