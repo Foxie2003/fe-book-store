@@ -5,7 +5,12 @@ import { FaStar, FaStarHalfStroke, FaRegStar } from "react-icons/fa6";
 function ProductHorizontal() {
   return (
     <div className={ProductStyle["product-horizontal-container"]}>
-      <Image src={"/logo.png"} width={118} height={118} alt="Product image" />
+      <Image
+        src={"/bai-ca-mung-giang-sinh.png"}
+        width={118}
+        height={118}
+        alt="Product image"
+      />
       <div className={ProductStyle["product-horizontal-info"]}>
         <div className={ProductStyle["product-horizontal-title"]}>
           Tên sản phẩm

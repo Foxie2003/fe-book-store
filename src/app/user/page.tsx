@@ -17,12 +17,13 @@ import SectionHeader from "@/components/user/homePage/sectionHeader";
 
 function HomePage() {
   return (
-    <div className={HomePageStyle["user-container"]}>
+    <div>
       {/* Carousels */}
       <div className={HomePageStyle["carousels-container"]}>
         <div className={HomePageStyle["carousels-left"]}>
           <Carousel
             interval={1000}
+            touch={true}
             prevIcon={
               <div className={HomePageStyle["carousels-back-button"]}>
                 <FaAngleLeft size={24} color="rgba(0, 0, 0, 0.6)" />
@@ -90,6 +91,7 @@ function HomePage() {
         </div>
       </div>
 
+      {/* Section danh mục sản phẩm */}
       <Section HeaderComponent={<SectionHeader title="Danh mục sản phẩm" />}>
         {/* Section Nav */}
         <SectionNav
@@ -106,9 +108,15 @@ function HomePage() {
         />
 
         {/* Section Body */}
-        <ProductRow productsTest={5} showArrow={true} showMore={true} />
+        <ProductRow
+          productsRow={1}
+          productsTest={5}
+          showArrow={true}
+          showMore={true}
+        />
       </Section>
 
+      {/* Section xu hướng mua sắm */}
       <Section
         HeaderComponent={
           <SpecialSectionHeader
@@ -117,9 +125,15 @@ function HomePage() {
           />
         }
       >
-        <ProductRow productsTest={10} showArrow={false} showMore={true} />
+        <ProductRow
+          productsRow={2}
+          productsTest={5}
+          showArrow={false}
+          showMore={true}
+        />
       </Section>
 
+      {/* Section giới thiệu sách */}
       <Section HeaderComponent={<SectionHeader title="Giới thiệu sách" />}>
         {/* Section Nav */}
         <SectionNav
@@ -138,6 +152,8 @@ function HomePage() {
         {/* Section Body */}
         <ProductCol />
       </Section>
+
+      {/* Go to top button */}
       <div
         style={{
           position: "fixed",

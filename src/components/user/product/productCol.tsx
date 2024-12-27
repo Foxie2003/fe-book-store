@@ -15,7 +15,8 @@ function ProductCol() {
         <div>
           <div className={ProductStyle["product-col-info-container"]}>
             <Image
-              src={"/logo.png"}
+              src={"/bai-ca-mung-giang-sinh.png"}
+              style={{ objectFit: "cover" }}
               width={309}
               height={378}
               alt="Product image"

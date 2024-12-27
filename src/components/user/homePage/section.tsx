@@ -10,11 +10,6 @@ function Section({
 }) {
   return (
     <div className={homePageStyle["section-container"]}>
-      {/* {isSpecial ? (
-        <SpecialSectionHeader title={title} Icon={Icon} />
-      ) : (
-        <SectionHeader title={title} />
-      )} */}
       {HeaderComponent && HeaderComponent}
       {children}
     </div>
