@@ -4,7 +4,14 @@ import Image from "next/image";
 function Product() {
   return (
     <div className={ProductStyle["product-container"]}>
-      <Image src={"/logo.png"} width={172} height={198} alt="Product image" />
+      <Image
+        src={"/bai-ca-mung-giang-sinh.png"}
+        layout="responsive"
+        width={172}
+        height={198}
+        alt="Product image"
+        style={{ alignSelf: "center", objectFit: "cover" }}
+      />
       <div className={ProductStyle["product-title"]}>Tên sản phẩm</div>
       <div className={ProductStyle["product-price-container"]}>
         <div className={ProductStyle["product-price"]}>100.000 đ</div>
