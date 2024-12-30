@@ -1,0 +1,134 @@
+/* Profile Styles */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Profile Menu Styles */
+.profile-menu-container {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 14px 0 23px 0;
+  width: 30%;
+}
+
+.profile-menu-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 17px;
+  margin: 0 18px;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
+.profile-menu-info-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-menu-info-email {
+  color: #707070;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.profile-menu-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 20px;
+
+  color: #707070;
+  font-size: 14px;
+  font-weight: 300;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.profile-menu-item:hover {
+  color: #D10000;
+  font-weight: 400;
+  border-left: 2px #D10000 solid;
+  padding-left: 18px;
+}
+
+.profile-sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 3px 0 0 45px;
+}
+
+.profile-sub-menu-item {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 300;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.profile-sub-menu-item:hover {
+  color: #D10000;
+}
+
+/* Profile Right Styles */
+.profile-right-container {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 15px 14px 46px 14px;
+  width: 70%;
+}
+
+.profile-right-header {
+  color: #D10000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profile-right-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-right-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px 16px 0 16px;
+}
+
+.profile-right-label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-right-input {
+  border: 1px solid #D9D9D9;
+  border-radius: 0px;
+
+  color: #707070;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.profile-right-button {
+  width: 160px;
+  border-radius: 5px;
+  background: #F00;
+  margin: 15px 0;
+  align-self: center;
+}
