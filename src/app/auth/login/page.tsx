@@ -1,5 +1,7 @@
 "use client";
 
+import FooterComponent from "@/components/admin/app.footer";
+import HeaderComponent from "@/components/login/login.header";
 import loginStyle from "@/styles/login/login.module.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -10,6 +12,7 @@ const LoginPage = () => {
   const router = useRouter();
   return (
     <>
+      <HeaderComponent title="ĐĂNG NHẬP" />
       <div className={loginStyle["login-container"]}>
         <Form className={loginStyle["login-form-container"]}>
           <h2 className={loginStyle["login-form-title"]}>Đăng nhập</h2>
@@ -55,6 +58,7 @@ const LoginPage = () => {
           </div>
         </Form>
       </div>
+      <FooterComponent />
     </>
   );
 };

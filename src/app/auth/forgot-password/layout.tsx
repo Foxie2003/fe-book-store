@@ -1,13 +1,14 @@
-import HeaderComponent from "@/components/login/login.header";
 import FooterComponent from "@/components/admin/app.footer";
-export default function LoginLayout({
+import HeaderComponent from "@/components/login/login.header";
+
+export default function ForgotPasswordLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent title="Quên mật khẩu" />
       {children}
       <FooterComponent />
     </>

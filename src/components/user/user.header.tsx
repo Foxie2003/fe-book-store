@@ -23,7 +23,7 @@ function UserHeader() {
             width="130"
             height="55"
             alt="React Bootstrap logo"
-            style={{ marginTop: -10 }}
+            style={{ objectFit: "cover", marginTop: -10 }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
