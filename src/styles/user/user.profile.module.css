@@ -132,3 +132,10 @@
   margin: 15px 0;
   align-self: center;
 }
+
+.profile-right-input-container {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  margin-bottom: 20px;
+}

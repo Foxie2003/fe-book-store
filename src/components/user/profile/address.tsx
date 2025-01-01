@@ -1,6 +1,5 @@
 "use client";
 import ProfileStyle from "@/styles/user/user.profile.module.css";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button, Form } from "react-bootstrap";
 
@@ -8,15 +7,10 @@ function Address() {
   const router = useRouter();
   return (
     <div className={ProfileStyle["profile-right-container"]}>
-      <div className={ProfileStyle["profile-right-header"]}>Hồ sơ cá nhân</div>
+      <div className={ProfileStyle["profile-right-header"]}>
+        Địa chỉ nhận hàng của bạn
+      </div>
       <div className={ProfileStyle["profile-right-body"]}>
-        <Image
-          src={"/user-avatar-1.png"}
-          width={80}
-          height={80}
-          alt="avatar"
-          style={{ borderRadius: 1000 }}
-        />
         <Form className={ProfileStyle["profile-right-form"]}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label className={ProfileStyle["profile-right-label"]}>
