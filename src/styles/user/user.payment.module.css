@@ -1,0 +1,213 @@
+/* Payment Styles */
+.payment-container {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 16px 10px;
+  margin-top: 16px;
+}
+
+/* Payment Header Styles */
+.payment-header {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-header-title {
+  color: #D10000;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.payment-header-des {
+  color: #707070;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Payment Body Styles */
+.payment-body {
+  display: flex;
+  gap: 8px;
+}
+/* Payment Info Styles */
+.payment-info {
+  padding-top: 14px;
+  border-top: 1px #707070 solid;
+  width: 60%;
+}
+
+.payment-info-header {
+  color: #D10000;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.payment-info-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 9px;
+  margin-bottom: 17px;
+}
+
+.payment-info-label {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.payment-info-input {
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+
+  color: #707070;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+/* Bill Info Styles */
+.bill-info {
+  width: 40%;
+  padding: 16px 15px;
+  border: 1px #F00 solid;
+}
+
+.bill-info-header {
+  color: #D10000;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.bill-info-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-info-body-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
+.bill-info-body-row:first-child {
+  padding-top: 0;
+}
+
+.bill-info-label {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.bill-info-price {
+  color: #D10000;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Custom Input Styles */
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.custom-radio input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-color: #D10000;
+}
+
+.custom-radio-small input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+.custom-radio input[type="radio"]:checked {
+  background-color: #D10000;
+}
+
+.custom-radio label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Form Styles */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.payment-form-radios-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 12px;
+}
+
+.payment-form-des {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
+.payment-form-button {
+  width: fit-content;
+  border-radius: 3px;
+  background: #F00;
+  padding: 7px 22px;
+
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Payment Confirm Styles */
+.payment-confirm {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px #707070 solid;
+  padding: 16px 0 39px 0;
+  margin-top: 12px;
+}
+
+.payment-confirm-text {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.payment-confirm-bold {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.payment-confirm-button {
+  border-radius: 5px;
+  background: #F00000;
+  padding: 12px 82px;
+
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  user-select: none;
+  cursor: pointer;
+}
