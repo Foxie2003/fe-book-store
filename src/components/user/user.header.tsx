@@ -17,7 +17,7 @@ function UserHeader() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/user">
           <Image
             src="/logo.png"
             width="130"
@@ -29,7 +29,7 @@ function UserHeader() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" style={{ gap: 5 }}>
-            <Nav.Link href="#home">TRANG CHỦ</Nav.Link>
+            <Nav.Link href="/user">TRANG CHỦ</Nav.Link>
             <NavDropdown title="DANH MỤC" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -58,10 +58,10 @@ function UserHeader() {
                 </Col>
               </Row>
             </Form>
-            <Nav.Link href="#link">
+            <Nav.Link href="/user/cart">
               <FaCartShopping size={20} />
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link href="/auth/login">
               <FaRegUser size={20} /> Đăng nhập
             </Nav.Link>
           </Nav>

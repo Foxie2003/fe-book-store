@@ -371,6 +371,9 @@
   font-weight: 500;
 }
 
+.cart-right-pay-button a {
+  text-decoration: none;
+}
 .cart-right-pay-button {
   border-radius: 5px;
   padding: 10px 0;

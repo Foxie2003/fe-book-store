@@ -25,6 +25,7 @@ function ProductRow({
       {Array.from({ length: productsRow }, (_, i) => (
         <>
           <div
+            key={i}
             style={{
               padding: showMore || showPage ? 0 : 15,
               marginBottom: productsRow > 1 && i != productsRow - 1 ? 30 : 0,

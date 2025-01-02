@@ -2,6 +2,7 @@ import PaymentStyle from "@/styles/user/user.payment.module.css";
 import CartStyle from "@/styles/user/user.cart.module.css";
 import Image from "next/image";
 import { Form } from "react-bootstrap";
+import Link from "next/link";
 
 function BillInfo() {
   return (
@@ -114,7 +115,12 @@ function BillInfo() {
             type={"radio"}
             id={`radio-2`}
           />
-          <div className={PaymentStyle["payment-form-button"]}>Đặt hàng</div>
+          <Link
+            href={"/user/payment/confirm"}
+            style={{ textDecoration: "none" }}
+          >
+            <div className={PaymentStyle["payment-form-button"]}>Đặt hàng</div>
+          </Link>
         </Form>
       </div>
     </div>

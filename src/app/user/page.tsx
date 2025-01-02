@@ -3,7 +3,9 @@ import Section from "@/components/user/homePage/section";
 import SectionNav from "@/components/user/homePage/sectionNav";
 import ProductCol from "@/components/user/product/productCol";
 import ProductRow from "@/components/user/product/productRow";
-import HomePageStyle from "@/styles/user/user.homepage.module.css";
+import HomePageStyle from "@/styles/user/user.homePage.module.css";
+import ProductStyle from "@/styles/user/user.product.module.css";
+
 import {
   FaAngleLeft,
   FaAngleRight,
@@ -22,6 +24,7 @@ function HomePage() {
       <div className={HomePageStyle["carousels-container"]}>
         <div className={HomePageStyle["carousels-left"]}>
           <Carousel
+            className={HomePageStyle["carousels-left-inner"]}
             interval={1000}
             touch={true}
             prevIcon={
@@ -108,12 +111,57 @@ function HomePage() {
         />
 
         {/* Section Body */}
-        <ProductRow
+        {/* <ProductRow
           productsRow={1}
           productsTest={5}
           showArrow={true}
           showMore={true}
-        />
+        /> */}
+        <Carousel
+          className={HomePageStyle["carousels-left-inner"]}
+          touch={true}
+          prevIcon={
+            <div className={HomePageStyle["carousels-back-button"]}>
+              <FaAngleLeft size={24} color="rgba(0, 0, 0, 0.6)" />
+            </div>
+          }
+          nextIcon={
+            <div className={HomePageStyle["carousels-next-button"]}>
+              <FaAngleRight size={24} color="rgba(0, 0, 0, 0.6)" />
+            </div>
+          }
+        >
+          <Carousel.Item>
+            <ProductRow
+              productsRow={1}
+              productsTest={5}
+              showArrow={false}
+              showMore={false}
+              showPage={false}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <ProductRow
+              productsRow={1}
+              productsTest={5}
+              showArrow={false}
+              showMore={false}
+              showPage={false}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <ProductRow
+              productsRow={1}
+              productsTest={5}
+              showArrow={false}
+              showMore={false}
+              showPage={false}
+            />
+          </Carousel.Item>
+        </Carousel>
+        <div className={ProductStyle["product-row-showMore-button"]}>
+          Xem thêm
+        </div>
       </Section>
 
       {/* Section xu hướng mua sắm */}
@@ -130,6 +178,7 @@ function HomePage() {
           productsTest={5}
           showArrow={false}
           showMore={true}
+          showPage={false}
         />
       </Section>
 

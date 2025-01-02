@@ -1,9 +1,13 @@
 import ProductStyle from "@/styles/user/user.product.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Product() {
   return (
-    <div className={ProductStyle["product-container"]}>
+    <Link
+      href={"/user/productDetails"}
+      className={ProductStyle["product-container"]}
+    >
       <Image
         src={"/bai-ca-mung-giang-sinh.png"}
         layout="responsive"
@@ -22,7 +26,7 @@ function Product() {
         <div className={ProductStyle["product-sold-text"]}>Đã bán: </div>
         <div className={ProductStyle["product-sold-number"]}>300</div>
       </div>
-    </div>
+    </Link>
   );
 }
 

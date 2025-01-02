@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { FaAngleRight, FaMinus, FaPlus } from "react-icons/fa6";
 import { BiSolidTrash } from "react-icons/bi";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import Link from "next/link";
 
 function Cart() {
   return (
@@ -251,7 +252,9 @@ function Cart() {
               </div>
             </div>
           </div>
-          <div className={CartStyle["cart-right-pay-button"]}>Thanh toán</div>
+          <Link href={"/user/payment"} style={{ textDecoration: "none" }}>
+            <div className={CartStyle["cart-right-pay-button"]}>Thanh toán</div>
+          </Link>
         </div>
       </div>
     </div>
